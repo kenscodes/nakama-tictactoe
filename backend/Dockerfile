@@ -15,3 +15,8 @@ COPY --from=builder /backend/backend.so /nakama/data/modules
 COPY --from=builder /backend/*.lua /nakama/data/modules/
 COPY --from=builder /backend/build/*.js /nakama/data/modules/build/
 COPY --from=builder /backend/local.yml /nakama/data/
+
+COPY run.sh /nakama/run.sh
+RUN chmod +x /nakama/run.sh
+
+ENTRYPOINT ["/nakama/run.sh"]
