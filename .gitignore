@@ -1,0 +1,14 @@
+# Backend modules
+backend/build/
+backend/node_modules/
+
+# Frontend builds
+frontend/dist/
+frontend/node_modules/
+
+# Environment files
+.env
+.env.local
+
+# Docker local Database Volumes
+backend/data/
