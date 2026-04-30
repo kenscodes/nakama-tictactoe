@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { authenticateDevice, restoreSession, nakamaClient, connectSocket, nakamaSession, nakamaSocket } from './NakamaClient';
+import { authenticateDevice, restoreSession, connectSocket, nakamaSocket } from './NakamaClient';
 import Lobby from './Lobby';
 import Game from './Game';
 
