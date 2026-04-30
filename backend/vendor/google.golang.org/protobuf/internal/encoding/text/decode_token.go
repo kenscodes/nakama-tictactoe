@@ -114,8 +114,6 @@ type Token struct {
 	// Scalar: one of numberValue, stringValue, literalValue.
 	attrs uint8
 	// numAttrs contains metadata for numberValue:
-	// - highest bit is whether negative or positive.
-	// - lower bits indicate one of numDec, numHex, numOct, numFloat.
 	numAttrs uint8
 	// pos provides the position of the token in the original input.
 	pos int
@@ -123,9 +121,6 @@ type Token struct {
 	// This is a subslice into the original input.
 	raw []byte
 	// str contains parsed string for the following:
-	// - stringValue of Scalar kind
-	// - numberValue of Scalar kind
-	// - TypeName of Name kind
 	str string
 }
 

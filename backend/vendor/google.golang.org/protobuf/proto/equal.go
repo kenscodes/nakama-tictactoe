@@ -14,22 +14,16 @@ import (
 // Equal reports whether two messages are equal,
 // by recursively comparing the fields of the message.
 //
-//   - Bytes fields are equal if they contain identical bytes.
 //     Empty bytes (regardless of nil-ness) are considered equal.
 //
-//   - Floating-point fields are equal if they contain the same value.
 //     Unlike the == operator, a NaN is equal to another NaN.
 //
-//   - Other scalar fields are equal if they contain the same value.
 //
-//   - Message fields are equal if they have
 //     the same set of populated known and extension field values, and
 //     the same set of unknown fields values.
 //
-//   - Lists are equal if they are the same length and
 //     each corresponding element is equal.
 //
-//   - Maps are equal if they have the same set of keys and
 //     the corresponding value for each key is equal.
 //
 // An invalid message is not equal to a valid message.

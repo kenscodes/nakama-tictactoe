@@ -13,10 +13,7 @@ import (
 // These constants determine the current version of this module.
 //
 // For our release process, we enforce the following rules:
-//   - Tagged releases use a tag that is identical to String.
-//   - Tagged releases never reference a commit where the String
 //     contains "devel".
-//   - The set of all commits in this repository where String
 //     does not contain "devel" must have a unique String.
 //
 // Steps for tagging a new release:

@@ -24,6 +24,4 @@
 // the Go implementation should as well.
 //
 // The text format is almost a superset of JSON except:
-//   - message keys are not quoted strings, but identifiers
-//   - the top-level value must be a message without the delimiters
 package text

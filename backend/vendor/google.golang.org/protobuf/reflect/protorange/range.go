@@ -67,25 +67,21 @@ type Options struct {
 //
 // The rules for traversing a message is as follows:
 //
-//   - For messages, iterate over every populated known and extension field.
 //     Each field is preceded by a push of a [protopath.FieldAccess] step,
 //     followed by recursive application of the rules on the field value,
 //     and succeeded by a pop of that step.
 //     If the message has unknown fields, then push an [protopath.UnknownAccess] step
 //     followed immediately by pop of that step.
 //
-//   - As an exception to the above rule, if the current message is a
 //     google.protobuf.Any message, expand the underlying message (if resolvable).
 //     The expanded message is preceded by a push of a [protopath.AnyExpand] step,
 //     followed by recursive application of the rules on the underlying message,
 //     and succeeded by a pop of that step. Mutations to the expanded message
 //     are written back to the Any message when popping back out.
 //
-//   - For lists, iterate over every element. Each element is preceded by a push
 //     of a [protopath.ListIndex] step, followed by recursive application of the rules
 //     on the list element, and succeeded by a pop of that step.
 //
-//   - For maps, iterate over every entry. Each entry is preceded by a push
 //     of a [protopath.MapIndex] step, followed by recursive application of the rules
 //     on the map entry value, and succeeded by a pop of that step.
 //

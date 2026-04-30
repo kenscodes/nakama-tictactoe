@@ -355,9 +355,6 @@ func (m *extensionMap) Mutable(xd protoreflect.ExtensionTypeDescriptor) protoref
 // MessageState is identical to a pointer to the concrete message value.
 //
 // Requirements:
-//   - The type M must implement protoreflect.ProtoMessage.
-//   - The address of m must not be nil.
-//   - The address of m and the address of m.state must be equal,
 //     even though they are different Go types.
 type MessageState struct {
 	pragma.NoUnkeyedLiterals

@@ -132,7 +132,6 @@ type Options struct {
 	// passed in the --<lang>_out protoc, separated from the output
 	// directory with a colon; e.g.,
 	//
-	//   --go_out=<param1>=<value1>,<param2>=<value2>:<output_directory>
 	//
 	// Parameters passed in this fashion as a comma-separated list of
 	// key=value pairs will be passed to the ParamFunc.

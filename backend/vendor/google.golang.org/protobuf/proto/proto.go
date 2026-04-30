@@ -17,9 +17,7 @@ import (
 // This is the v2 interface definition for protobuf messages.
 // The v1 interface definition is [github.com/golang/protobuf/proto.Message].
 //
-//   - To convert a v1 message to a v2 message,
 //     use [google.golang.org/protobuf/protoadapt.MessageV2Of].
-//   - To convert a v2 message to a v1 message,
 //     use [google.golang.org/protobuf/protoadapt.MessageV1Of].
 type Message = protoreflect.ProtoMessage
 

@@ -2,9 +2,9 @@ import { Client, Session } from '@heroiclabs/nakama-js';
 import type { Socket } from '@heroiclabs/nakama-js';
 
 // Configuration. Overwrite `host` with your assigned VPS or Render deployment.
-const useSSL = false; 
-const host = '127.0.0.1'; 
-const port = '7350';
+const useSSL = true; 
+const host = 'nakama-server-yaxp.onrender.com'; 
+const port = '443';
 const serverKey = 'defaultkey';
 
 export const nakamaClient = new Client(serverKey, host, port, useSSL);
