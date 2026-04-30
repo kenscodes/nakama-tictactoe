@@ -1,5 +1,4 @@
 # Backend modules
-backend/build/
 backend/node_modules/
 
 # Frontend builds
